@@ -12,10 +12,10 @@ module.exports = {
      * }], {});
     */
 
-    await queryInterface.bulkInsert('users', [{
-      name: 'usertest',
-      email: 'usertest@email.com',
-      password: 'usertest',
+    await queryInterface.bulkInsert('books', [{
+      isbn: 'ISBNTEST',
+      title: 'Test Book',
+      author: 'Test Author',
       createdAt: new Date(),
       updatedAt: new Date()
     }])

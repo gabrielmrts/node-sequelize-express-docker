@@ -16,6 +16,9 @@ and implementing third party libs to show my skills***
 ***Generate migration:***
 >Run: npx sequelize-cli db:migrate --url 'postgresql://dev:dev@0.0.0.0:55432/dev'
 
+***Seed tables***
+>Run: npx sequelize-cli db:seed:all --url 'postgresql://dev:dev@0.0.0.0:55432/dev'
+
 *TODO:*
 - [ ] Add support to JWT
 - [ ] Add user roles

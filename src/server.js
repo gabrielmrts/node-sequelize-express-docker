@@ -8,9 +8,13 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 require("./routes/user.routes")(app);
+require("./routes/book.routes")(app);
 
 app.listen(3030, () => {
     console.log('running on 3030');
 });
 
-db.sequelize.sync();
+//await the database initialization
+setTimeout(() => {
+    db.sequelize.sync();
+}, 1000);
