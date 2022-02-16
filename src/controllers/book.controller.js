@@ -12,7 +12,7 @@ exports.create = async (req, res) => {
 
     return res.status(201).json({
         error: false,
-        msg: "Book created successfuly"
+        msg: "Book created with success"
     });
 }
 
