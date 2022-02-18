@@ -13,7 +13,7 @@ and implementing third party libs to show my skills***
 ***Dependencies: docker, docker-compose***
 
 **Useful commands**
-***Generate migration:***
+***Generate migrations:***
 >Run: npx sequelize-cli db:migrate --url 'postgresql://dev:dev@0.0.0.0:55432/dev'
 
 ***Seed tables***
