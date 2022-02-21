@@ -13,7 +13,7 @@ require("./routes/user.routes")(app);
 require("./routes/book.routes")(app);
 
 app.listen(PORT, () => {
-    console.log(`running on ${PORT}`);
+    console.log(`server running on ${PORT}`);
 });
 
 //await the database initialization
