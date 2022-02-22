@@ -8,9 +8,8 @@ exports.validate = (body) => {
             .required(),
         
         email: Joi.string()
-            .email()
-            .min(5)
-            .max(255)
+            .email(),
+            .max(255),
             .required(),
         
         password: Joi.string()
