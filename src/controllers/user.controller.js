@@ -22,7 +22,7 @@ exports.create = async (req, res) => {
 
     return res.status(201).json({
         error: false,
-        msg: "User created successfully"
+        msg: "User created with success"
     });
 }
 
