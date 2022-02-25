@@ -46,7 +46,7 @@ exports.get = async (req, res) => {
 
     return res.status(404).json({
         error: true,
-        msg: "Book not found"
+        msg: "Book not found!"
     });
 }
 
