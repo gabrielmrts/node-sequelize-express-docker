@@ -7,7 +7,7 @@
 ![Bitbucket open issues](https://img.shields.io/bitbucket/issues/gabrielmrts/node-sequelize-express-docker?style=for-the-badge)
 ![Bitbucket open pull requests](https://img.shields.io/bitbucket/pr-raw/gabrielmrts/node-sequelize-express-docker?style=for-the-badge)
 
-> A ideia desse projeto é ser escalável, robusto e seguro.
+> A ideia desse projeto é ser uma API para uma biblioteca virtual, onde os livros poderão ser publicados.
 
 ### Ajustes e melhorias
 
