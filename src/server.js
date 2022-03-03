@@ -3,7 +3,7 @@ const cors = require("cors");
 const app = express();
 const db = require("./models");
 
-const PORT = 3030
+const PORT = process.env.APP_PORT ? process.env.APP_PORT : 3030;
 
 app.use(cors());
 app.use(express.json());
