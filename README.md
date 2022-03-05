@@ -14,7 +14,7 @@
 O projeto ainda está em desenvolvimento e as próximas atualizações serão voltadas nas seguintes tarefas:
 
 - [ ] Adicionar middlewares
-- [ ] Adicionar suporte à JWT
+- [X] Adicionar suporte à JWT
 
 ## 💻 Pré-requisitos
 
