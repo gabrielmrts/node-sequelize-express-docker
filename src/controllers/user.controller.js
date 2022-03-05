@@ -1,6 +1,7 @@
 const db = require("../models");
 const User = db.users;
 const validate = require("../validators/user.validate").validate;
+const jwt = require("../utils/jwt");
 
 exports.create = async (req, res) => {
     const user = {
@@ -67,5 +68,37 @@ exports.get = async (req, res) => {
     return res.status(404).json({
         error: true,
         msg: "User not found"
+    });
+}
+
+exports.auth = async (req, res) => {
+    const credentials = {
+        email: req.body.email,
+        password: req.body.password
+    }
+
+    var user = await User.findOne({
+        where: credentials
+    });
+
+    if (user) {
+        try {
+            return res.json({
+                error: false,
+                msg: {
+                    jwt: jwt.sign(credentials)
+                }
+            });
+        } catch (error) {
+            return res.status(400).json({
+                error: true,
+                msg: error.message
+            });
+        }
+    } 
+
+    return res.json({
+        error: true,
+        msg: "Invalid credentials"
     });
 }
