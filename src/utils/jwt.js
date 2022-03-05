@@ -1,6 +1,6 @@
 const jwt = require("jsonwebtoken");
 
-const APP_TOKEN = process.env.APP_TOKEN ? process.env.APP_TOKEN : "TESTTOKEN";
+const APP_TOKEN = process.env.APP_TOKEN ? process.env.APP_TOKEN : "EXAMPLETOKEN";
 
 exports.sign = (value) => {
     return jwt.sign({
